@@ -107,12 +107,12 @@ function validateDescription(req, res, next){
 }
 
 function validateCompleted(req, res, next){
-    if(!req.body.completed){
-        res.status(400).json({ message: "missing required completed field" });
-    }
-    else{
+    if(req.body.hasOwnProperty('completed') && (req.body.completed == false|| req.body.completed == true)){
         req.completed = req.body.completed;
         next();
+    }
+    else{
+        res.status(400).json({ message: "missing required completed field" });
     }
 }
 
