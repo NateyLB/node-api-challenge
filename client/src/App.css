@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+nav{
+  display: flex;
+  justify-content: center;
+}
+
+nav a{
+  text-decoration: none;
+  color:black
+}
+
+nav a:hover{
+  color:blue
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  width: 50%;
+  border: 1px solid black;
+  margin: 1% 0;
+  text-decoration: none;
+  color:black;
+  text-align: center;
+}
+

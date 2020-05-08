@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 
 const actionRouter = require('./actions/actionRouter.js');
 const projectRouter = require('./projects/projectRouter.js');
@@ -7,6 +8,7 @@ const server = express();
 
 //global middleware
 server.use(express.json());
+server.use(cors());
 server.use(logger);
 server.use('/actions', actionRouter );
 server.use('/projects', projectRouter );

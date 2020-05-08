@@ -40,13 +40,17 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+
 - [ ] Describe Middleware?
+middleware sits between client and server and can intercept and do things to requests and repsonses
 
 - [ ] Describe a Resource?
 
 - [ ] What can the API return to help clients know if a request was successful?
+a status message and the change that was made 
 
 - [ ] How can we partition our application into sub-applications?
+by using routes in express
 
 ## Minimum Viable Product
 
